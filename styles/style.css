@@ -1,0 +1,559 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Merriweather-Regular"),
+    url("../fonts/Merriweather-Regular.woff2") format("woff2"),
+    url("../fonts/Merriweather-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat-Regular"),
+    url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GolosText";
+  font-style: normal;
+  font-weight: 400;
+  src: local("GolosText-Regular"),
+    url("../fonts/GolosText-Regular.woff2") format("woff2"),
+    url("../fonts/GolosText-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+:root {
+  --mine-shaft: #1f1f1f;
+  --flamingo: #f54932;
+  --saffron-mango: #fbce51;
+  --azure: #3057a2;
+  --pearl-bush: #e9ded4;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--white);
+}
+
+.main {
+  position: relative;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1224px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container:before,
+.container:after {
+  content: none;
+}
+
+.flex {
+  display: flex;
+}
+
+h1 {
+  display: none;
+}
+
+.hero-title {
+  width: 50%;
+  margin-bottom: 0;
+  margin-top: 62px;
+  color: #060606;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "Merriweather";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 105%;
+  text-transform: uppercase;
+}
+
+h2.hero-title.second-title.wow.fadeInUp,
+h2.hero-title.third-title.wow.fadeInUp {
+  margin-top: 5px;
+  width: 45%;
+  color: #060606;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "Merriweather";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 105%;
+  text-transform: uppercase;
+  text-align: center;
+}
+h2.hero-title.third-title.wow.fadeInUp {
+  width: 47%;
+}
+
+.hero-descr {
+  margin-bottom: 35px;
+  margin-top: 24px;
+  width: 44%;
+  color: #151515;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  /* 23.4px */
+}
+
+.header {
+  position: relative;
+  z-index: 10;
+}
+
+.hero {
+  background-image: url("../img/main1920.jpeg");
+  min-height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-logo {
+  margin-top: 25px;
+}
+
+.hero-btnblack {
+  max-width: 263px;
+  margin-right: 15px;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  background-color: var(--mine-shaft);
+  border-radius: 66px;
+  border: none;
+  outline: none;
+  padding: 16px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.hero-btnblack:hover {
+  background-color: var(--saffron-mango);
+  color: var(--mine-shaft);
+}
+
+.hero-btntransparent {
+  max-width: 263px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--mine-shaft);
+  background-color: transparent;
+  border-radius: 66px;
+  border: solid 2px var(--mine-shaft);
+  outline: none;
+  padding: 16px 40px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.hero-btntransparent:hover {
+  color: white;
+  background-color: var(--mine-shaft);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee,
+.footer-marquee {
+  position: relative;
+  background-color: var(--flamingo);
+  padding-block: 18px;
+  overflow: hidden;
+}
+
+.marquee__inner,
+.footer-marquee__inner {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.marquee__part,
+.footer-marquee__part {
+  color: #fff;
+  text-align: right;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "Merriweather";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  /* 24.2px */
+  text-transform: uppercase;
+  flex-shrink: 0;
+  padding-inline: 2px;
+  animation-name: marquee;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.tourneer.container {
+  margin-top: 80px;
+}
+
+.tourneer-table {
+  margin-top: 50px;
+  border-collapse: collapse;
+  border: 2px solid white;
+}
+
+.tourneer-title__black,
+.tourneer-idea__black {
+  margin: 0;
+  color: var(--mine-shaft);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "Merriweather";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+  /* 48.6px */
+  text-transform: uppercase;
+}
+
+.tourneer-idea__red,
+.tourneer-title__red {
+  margin: 0;
+  color: var(--flamingo);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "Merriweather";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+  /* 48.6px */
+  text-transform: uppercase;
+}
+
+.tourneer-table__light {
+  padding: 14px 19px 16px 0;
+  border: 1px solid var(--mine-shaft);
+  color: var(--mine-shaft);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "GolosText";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.tourneer-table__bold {
+  padding: 11px 0 16px 19px;
+  border: 1px solid var(--mine-shaft);
+  color: var(--mine-shaft);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "GolosText";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.tourneer-idea__decr {
+  margin-top: 30px;
+  color: var(--azure);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "GolosText";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.tourneer-idea__img{
+  margin-left: -27px;
+}
+
+.tourneer-mobile{
+  display: none;
+}
+
+.block-content {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.block-content__descr {
+  position: absolute;
+  left: 18.9rem;
+      top: 72px;
+  width: 25%;
+  margin: 0;
+  color: #3057a2;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "GolosText";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.block-content__title {
+  margin: 0;
+}
+
+.block-content__title,
+.participants-title {
+  width: 60%;
+  color: var(--mine-shaft);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "Merriweather";
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 64.8px */
+  text-transform: uppercase;
+}
+
+.sources-mobile {
+  display: none;
+}
+
+.sources {
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-auto-flow: column;
+  gap: 18px;
+}
+
+.sources-item {
+  display: flex;
+  max-width: 394px;
+  padding: 21px;
+  background-image: url("../img/paper.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sources-item span,
+.sources-item p {
+  margin: 0;
+  color: var(--mine-shaft);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "GolosText";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+span.sources-item__span {
+  margin-right: 16px;
+  display: flex;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+}
+
+.sources-img {
+  position: absolute;
+  right: 0;
+  margin-top: -118px;
+}
+
+.sources-item__span {
+  padding: 10px 15px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.item-3 {
+  grid-row: span 2;
+}
+
+.item-7 {
+  grid-column: span 2;
+  max-width: 803px;
+}
+
+.item-7 p{
+  width: 55%;
+}
+
+.last-boldprice{
+  color: #ff2c0a; 
+  text-decoration: line-through;
+}
+
+.last-boldprice__price{
+  color: var(--mine-shaft);
+}
+
+.participants {
+  margin-top: 196px;
+  margin-bottom: 140px;
+}
+
+.swiper.participants-swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+  margin-top: -98px;
+  padding-top: 113px;
+  z-index: 100;
+}
+
+
+.swiper-slide {
+  flex-shrink: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  height: 44px;
+  width: 44px;
+    align-items: center;
+  top: 23px;
+  left: auto;
+  background-color: var(--mine-shaft);
+  border-radius: 50%;
+  align-items: center;
+  z-index: 1000;
+}
+
+.swiper-button-prev {
+  right: 107px;
+}
+
+.swiper-button-next{
+  right: 0;
+}
+
+.participants-swiper__page {
+  top: 14px;
+  left: auto;
+  right: -44%;
+}
+
+.swiper-button-prev:after {
+  margin-top: -13px;
+  content: url("../img/prev.svg");
+}
+
+.swiper-button-next:after {
+  margin-top: -13px;
+  content: url("../img/next.svg");
+}
+
+.participants-card {
+  flex-direction: column;
+  align-items: center;
+}
+
+.participants-card__descr {
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 6px;
+  color: var(--mine-shaft);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "GolosText";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.participants-card__img {
+  height: 320px;
+  width: 320px;
+  background-image: url("../img/person.svg"), url("../img/paper.jpeg");
+  border-radius: 50%;
+  background-position: 9px 27px;
+  background-repeat: no-repeat, repeat;
+  background-size: auto, cover;
+}
+
+.participants-card__span {
+  margin-bottom: 20px;
+  color: var(--mine-shaft);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "GolosText";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+.participants-card__btn {
+  width: 98px;
+    min-height: 28px;
+  color: var(--azure);
+  border: solid 2px var(--azure);
+  border-radius: 62px;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.participants-card__btn:hover {
+  background-color: var(--azure);
+  color: white;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  background-color: var(--pearl-bush);
+}
+
+.footer-container.container {
+  padding: 25px 0 55px;
+}

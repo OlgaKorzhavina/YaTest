@@ -1,0 +1,511 @@
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1222px;
+  }
+
+  .tourneer.container {
+    margin-top: 81px;
+  }
+
+  .tourneer-title {
+    margin-top: 26px;
+    width: 62%;
+}
+
+  .tourneer-idea.flex {
+    justify-content: space-between;
+  }
+
+  .tourneer-idea__right {
+    margin-top: 59px;
+    margin-left: 14px;
+  }
+
+  .block {
+    margin-top: 175px;
+  }
+
+  .sources {
+    margin-top: 53px;
+  }
+
+}
+
+@media (max-width: 1242px) {
+
+  .container {
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+
+  .hero-title,
+  h2.hero-title.second-title.wow.fadeInUp,
+  h2.hero-title.third-title.wow.fadeInUp,
+  .hero-descr {
+    width: 100%;
+  }
+
+  .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-btnblack {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  .block {
+    margin-top: 80px;
+  }
+
+  .block-content {
+    display: block;
+  }
+
+  .block-content__title,
+  .participants-title,
+  .block-content__descr {
+    width: 100%;
+  }
+
+  .block-content__descr {
+    position: relative;
+    left: auto;
+    top: 0;
+  }
+
+  .sources-img img {
+    max-height: 180px;
+  }
+
+  .participants {
+    margin-top: 130px;
+  }
+
+  .participants-card__img {
+    height: 244px;
+    width: 244px;
+    background-position: -26px 27px;
+  }
+
+  .participants-swiper__page {
+    right: -42%;
+  }
+
+  .footer-container.container {
+    padding: 25px 20px 55px;
+  }
+}
+
+@media (max-width: 977px) {
+  .container {
+    max-width: 857px;
+  }
+
+  .hero-btnblack,
+  .hero-btntransparent {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .tourneer-idea {
+    display: none;
+  }
+
+  .tourneer-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tourneer-mobile {
+    margin-top: 50px;
+    border-collapse: collapse;
+    border: 2px solid white;
+  }
+
+  .tourneer-mobile__black {
+    margin: 0;
+    color: var(--mine-shaft);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: "Merriweather";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+    /* 48.6px */
+    text-transform: uppercase;
+  }
+
+  .tourneer-mobile__red{
+    margin: 0;
+    color: var(--flamingo);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: "Merriweather";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+    /* 48.6px */
+    text-transform: uppercase;
+  }
+
+  .tourneer-mobile__light {
+    margin: 0;
+    padding: 14px 19px 16px 0;
+    color: var(--mine-shaft);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: "GolosText";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    opacity: 0.7;
+  }
+
+  .tourneer-mobile__contentlight{
+    margin: 0;
+    padding: 0;
+    color: var(--mine-shaft);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: "GolosText";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    opacity: 0.7;
+  }
+
+  .tourneer-mobile__contentbold{
+    margin: 0;
+    padding: 0;
+    color: var(--mine-shaft);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: "GolosText";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  .tourneer-mobile__content{
+    margin: 0;
+    padding: 11px 0 16px 0px;
+    border-bottom: 1px solid var(--mine-shaft);
+
+  }
+
+  .tourneer-mobile__bold {
+    margin: 0;
+    padding: 11px 0 16px 0px;
+    border-bottom: 1px solid var(--mine-shaft);
+    color: var(--mine-shaft);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: "GolosText";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  .last {
+    border-bottom: none;
+
+  }
+
+  .tourneer-mobile__decr {
+    margin-top: 30px;
+    color: var(--azure);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: "GolosText";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .tourneer-mobile__img {
+    margin-left: 0;
+  }
+
+  .sources {
+    display: none;
+  }
+
+  .sources-mobile {
+    display: flex;
+  }
+
+  .sources-mobile__item {
+    display: flex;
+    max-width: 394px;
+    min-height: 240px;
+    padding: 21px 21px 15px 21px;
+    background-image: url('../img/paper.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  span.sources-mobile__span {
+    margin-right: 16px;
+    width: 6px;
+    height: 36px;
+    align-items: center;
+  }
+
+  .col {
+    flex-direction: column;
+  }
+
+  .sources-mobile__span {
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  .sources-swiper__prev,
+  .sources-swiper__next {
+    top: auto;
+  }
+
+  .sources-swiper__prev {
+    right: auto;
+  }
+
+  .participants-swiper__page,
+  .participants-swiper__prev {
+    right: auto;
+    top: auto;
+    left: auto;
+  }
+
+  .participants-swiper__next {
+    top: auto;
+  }
+
+  .swiper.participants-swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+    padding-bottom: 22px;
+  }
+
+  .swiper-wrapper {
+    padding-bottom: 55px;
+  }
+
+  .swiper.sources-swiper.swiper-initialized.swiper-horizontal.swiper-android.swiper-css-mode {
+    padding-bottom: 30px;
+  }
+
+  .swiper-css-mode.swiper-horizontal>.swiper-wrapper {
+    padding-top: 109px;
+  }
+
+  .sources-mobile__item p {
+    width:80%;
+    text-align: left;
+  }
+}
+
+
+@media (max-width: 523px) {
+  .container{
+    padding: 0 18px;
+  }
+
+  .hero {
+    background-image: url('../img/main-mobile.jpeg');
+    min-height: 776px;
+  }
+
+  img.hero-logo {
+    margin-top: 18px;
+    height: 31px;
+  }
+
+  .hero-title {
+    margin-top: 39px;
+    font-size: 36px;
+  }
+
+  h2.hero-title.second-title.wow.fadeInUp,
+  h2.hero-title.third-title.wow.fadeInUp {
+    font-size: 36px;
+  }
+
+  h2.hero-title.third-title.wow.fadeInUp {
+    text-align: right;
+  }
+
+  .hero-descr {
+    margin-bottom: 31px;
+    text-align: left;
+    font-size: 17px;
+  }
+
+  .hero-btnblack,
+  .hero-btntransparent {
+    padding: 14px;
+  }
+
+  .hero-btnblack {
+    margin-bottom: 12px;
+  }
+
+  .marquee__part,
+  .footer-marquee__part {
+  font-size: 16px;
+  }
+
+  .marquee{
+    padding-block: 9px;
+  }
+
+  .tourneer.container {
+    margin-top: 48px;
+}
+
+.tourneer-mobile {
+  margin-top: 8px;
+}
+
+  .tourneer-mobile__black{
+    margin-bottom: 25px;
+    font-size: 28px;
+  }
+
+  .tourneer-mobile__black:last-child {
+    margin-top: 22px;
+    margin-bottom: 25px;
+  }
+  .tourneer-mobile__title img{
+    max-height: 213px;
+  }
+
+  .tourneer-mobile__red{
+font-size: 28px;
+  }
+  
+
+  .tourneer-mobile__bold {
+    margin: 0;
+    padding: 0 0 16px 0px;
+  }
+
+  .tourneer-mobile__light{
+    padding: 14px 19px 14px 0;
+  }
+
+.tourneer-mobile__decr{
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+.block {
+  margin-top: 94px;
+}
+
+.block-content__title {
+  font-size: 36px;
+}
+
+.block-content__descr{
+  margin-top: 7px;
+  font-size: 18px;
+}
+
+.swiper-slide.swiper-slide-active {
+  margin-top: 40px;
+}
+
+.sources-img {
+  top: 0;
+  margin-top: -120px;
+}
+
+
+.sources-mobile__item {
+  padding-top: 45px;
+}
+
+span.sources-mobile__span {
+  margin-right: 20px;
+}
+
+.sources-mobile__content{
+  margin: 0;
+align-items: baseline;
+}
+
+.sources-mobile__content:not(:last-child){
+margin-bottom: 0;
+}
+
+.sources-mobile__content:last-child{
+  margin-bottom: 20px;
+  }
+
+.sources-mobile__span {
+  display: flex;
+  padding: 1px 14px;
+}
+
+.sources-swiper__prev{
+  left: 23%;
+}
+
+.participants {
+  margin-top: 97px;
+  margin-bottom: 99px;
+}
+
+  .participants-swiper__page {
+    right: 0;
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    height: 37px;
+    width: 37px;
+  }
+
+
+  .swiper-button-prev.sources-swiper__prev.swiper-button-disabled {
+    bottom: 21px;
+    left: 24%;
+}
+
+.swiper-button-next.sources-swiper__next {
+  bottom: 21px;
+  left: 65%;
+}
+
+.swiper-pagination.sources-swiper__pages.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 31px;
+}
+
+.participants-title{
+  font-size: 36px;
+}
+
+.swiper.participants-swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+  margin-top: -145px;
+}
+
+.participants-card__img {
+  height: 242px;
+  width: 244px;
+  background-position: 6px 11px;
+  background-size: 229px;
+}
+
+.participants-swiper__next, .participants-swiper__prev {
+  top: 97%;
+}
+
+.participants-swiper__next{
+  left: 58%;
+}
+
+.participants-swiper__prev {
+left: 31%;
+}
+
+.footer-marquee {
+  padding-block: 11px;
+}
+
+}
